@@ -14,6 +14,7 @@ export default function Home() {
           Embodied Semantic Scene Graph Generation
         </h1>
         
+        
         <h3 className={styles.description}>
           Anounymous Submision for RSS2021 (#140)
         </h3>
