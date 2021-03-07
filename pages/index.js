@@ -54,11 +54,10 @@ export default function Home() {
           RGB and depth frames are captured. With the RGB and depth frames, the corresponding semantic point cloud is generated, which is then used to update the
           global point cloud and global semantic scene graph at time instant t. With the current observed RGB frame, current local semantic scene graph and action
           type at time instant t, a new action is generated for the agent to further explore the environment. This process iterates until a stop action is obtained.
-          Our framework consists of three essential parts: Global Semantic Scene Graph Constructor, Local Scene Graph Prediction Network (LSGPN) and Navigation Model.
+          Our framework consists of three essential parts: Global Semantic Scene Graph Constructor, Local Scene Graph Prediction Network and Navigation Model.
           <br>
           &nbsp;&nbsp;&nbsp;&nbsp;At each step, LSGPN predicts a local semantic scene graph from the current observation of the agent, Global Semantic Scene Graph Constructor updates the global
           scene graph which contains all the detected objects and the semantic relations between them, and update the nodes and edges in the global semantic scene graph.
-          
         </p>
         
         <p className={styles.caption}>
@@ -69,14 +68,11 @@ export default function Home() {
         
         <p className={styles.description}>
           As shown in fig.2, the Local Scene Graph Prediction Network consists of embedding module and Graph Convolutionary Network(GCN) module,
-          The generated local semantic scene graph includes the current in-sight objects and their relations with each other.
-          The embedding module utilizes two PointNet models to deal
-          with the object and relationships, respectively, and separately
-          combines them with the category information using the Multiple Layer Perception (MLP) to get the corresponding feature
-          vectors, which can be arranged as a set of triples (subject,
-          predicate, object) to form the dense graph.
-          We further employ the GCN module to process the instances
-          and proposed edges in the triples. The GCN projects each
+          The generated local semantic scene graph includes the current in-sight objects and their relations with each other. 
+          The embedding module utilizes two PointNet models to deal with the object and relationships, respectively, and separately
+          combines them with the category information using the Multiple Layer Perception (MLP) to get the corresponding feature
+          vectors, which can be arranged as a set of triples (subject, predicate, object) to form the dense graph.
+          We further employ the GCN module to process the instances and proposed edges in the triples. The GCN projects each
           triple for information propagation, and the features of neighbors are averaged as the new feature for each node.
         </p>
         <p className={styles.caption}>
