@@ -37,7 +37,7 @@ export default function Home() {
           
         </p>
         
-        <img src="/framework.png"/ className={styles.img}>
+        <img src="/framework.png" className={styles.img} />
         
       </main>
     
