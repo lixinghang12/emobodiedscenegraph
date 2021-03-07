@@ -20,6 +20,7 @@ export default function Home() {
           
         <div className={styles.box}>
             <div className={styles.small_video}>
+                <span>图片bai1</span>
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>              
