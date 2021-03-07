@@ -54,7 +54,7 @@
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
@@ -116,6 +116,10 @@
 
 .img {
   width: 100%;
+}
+
+.caption {
+  text-align:center;
 }
 
 @media (max-width: 600px) {
