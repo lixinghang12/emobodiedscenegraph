@@ -15,39 +15,43 @@ export default function Home() {
         </h1>
         
         <h3 className={styles.description}>
-          Abstract
+          Anounymous Submision for RSS2021 (#140)
         </h3>
-        <p className={styles.description}>
-          &nbsp;&nbsp;&nbsp;&nbsp;Semantic scene graph provides an effective way for
-          intelligent agents to better understand the environment and it
-          has been extensively used in many robotic applications. However,
-          existing work mainly focuses on generating the scene graph from
-          the sensory information collected from a pre-defined path. To
-          obtain a comprehensive semantic scene graph efficiently, the
-          environment should be exhaustively explored with a carefully
-          designed path. In this paper, we propose a new task of Embodied
-          Semantic Scene Graph, which exploits the embodiment of the
-          intelligent agent to autonomously generate a best path to explore
-          the environment for scene graph generation. To this end, a
-          learning framework with the paradigms of imitation learning
-          and reinforcement learning is proposed to help the agent generate
-          proper actions to explore the environment and the scene graph is
-          incrementally constructed. The proposed method is evaluated on
-          the AI2Thor dataset using both the quantitative and qualitative
-          performance indexes. Additionally, we implement the proposed
-          method on a streaming video captioning task and promising
-          experimental results are achieved.
-          
-        </p>
+        
+        <div>
+          <h3 align="left"><font color="black">The illustration for the Embodied Semantic Scene Graph Generation </h3>
+          <h3 align="center"><font color="black"> The architecture of the navigation model. </h3>
+          <h3 align="right"><font color="black"> The illustration of the demonstration path generation. </h3>
+        </div> 
+        <div class="box">
+            <div class="left">
+                <video poster="/demonstrate.png" controls className={styles.video}>
+                  <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                  
+                </video>              
+            </div>
+            <div class="center">
+                <video poster="/navigate.png" controls className={styles.video}>
+                  <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                  
+                </video>
+            </div>
+            <div class="right">
+                <video poster="/track_v4.png" controls className={styles.video}>
+                  <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                  
+                </video>
+            </div>
+        </div> 
     
         <p className={styles.caption}>
           Vid.1 The introduction video of the generation of demonstrating tracks.
         </p>
         
-        <video poster="/demonstrate.png" controls className={styles.img}>
-          <source src="demon.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-          <p>This is fallback content</p>
-        </video>
+//         <video poster="/demonstrate.png" controls className={styles.img}>
+//           <source src="demon.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+//           <p>This is fallback content</p>
+//         </video>
     
     
         <p className={styles.description}>
@@ -105,10 +109,10 @@ export default function Home() {
           Vid.2 The architecture of Navigation Model.
         </p>
         
-        <video poster="/navigate.png" controls className={styles.img}>
-          <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-          <p>This is fallback content</p>
-        </video>
+//         <video poster="/navigate.png" controls className={styles.img}>
+//           <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+//           <p>This is fallback content</p>
+//         </video>
         
         <p className={styles.description}>
           The above video is an illustration of the architecture of the navigation model. At each time step, the action feature, RGB feature and the local semantic scene graph feature 
@@ -123,10 +127,10 @@ export default function Home() {
         <p className={styles.caption}>
           Vid.3 The introduction video of the generation of demonstrating tracks.
         </p>
-        <video poster="/track_v4.png" controls className={styles.img}>
-          <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-          <p>This is fallback content</p>
-        </video>
+//         <video poster="/track_v4.png" controls className={styles.img}>
+//           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+//           <p>This is fallback content</p>
+//         </video>
         
         <p className={styles.description}>
           The above video is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
