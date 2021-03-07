@@ -127,9 +127,6 @@
   width: 30%;
 }
 .box{
-/*     width:1300px;
-    margin:0 auto;
-    position:relative; */
   display:flex; 
   justify-content:space-around;
 }
