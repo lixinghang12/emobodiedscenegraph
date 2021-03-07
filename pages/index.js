@@ -102,15 +102,21 @@ export default function Home() {
           Navigation Model
         </h3>
         <p className={styles.caption}>
-          Fig.3 The architecture of Navigation Model.
+          Vid.2 The architecture of Navigation Model.
         </p>
-        <img src="/navigation.png" className={styles.img} />
+        
+        <video poster="/navigate.png" controls className={styles.img}>
+          <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+          <p>This is fallback content</p>
+        </video>
+        
         <p className={styles.description}>
           Fig.3 is the architecture of the navigation model. At each time step, the action feature, RGB feature and the local semantic scene graph feature 
           are firstly extracted and concatenated. The concatenated feature are then fed into a double-layer LSTM which outputs the hidden state feature. 
           The hidden state feature is then fed into an MLP network to generate an action for the next step. This process iterates until a ”STOP" 
           action is generated, which indicates that the environment is fully explored and a comprehensive global semantic scene graph is generated.
         </p>
+        
         <h3 className={styles.description}>
           Demonstrating Track
         </h3>
