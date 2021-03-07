@@ -136,6 +136,10 @@
   float:left;
   width: 30%;
 }
+.video_caption{
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
