@@ -36,10 +36,10 @@ export default function Home() {
           experimental results are achieved.
           <code className={styles.code}>pages/index.js</code>
         </p>
-    
-        <img src="/framework.png"/>
         
       </main>
+    
+      <img src="/framework.png"/>
 
       <footer className={styles.footer}>
        
