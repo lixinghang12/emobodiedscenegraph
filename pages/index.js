@@ -48,10 +48,6 @@ export default function Home() {
                 </video>
             </div>
         </div> 
-    
-        <p className={styles.caption}>
-          Vid.1 The introduction video of the generation of demonstrating tracks.
-        </p>
        
     
     
@@ -62,6 +58,7 @@ export default function Home() {
           be helpful to generate the streaming video captioning.
           
         </p>
+        
         <h3 className={styles.description}>
           Framework
         </h3>
@@ -106,17 +103,9 @@ export default function Home() {
         <h3 className={styles.description}>
           Navigation Model
         </h3>
-        <p className={styles.caption}>
-          Vid.2 The architecture of Navigation Model.
-        </p>
-        
-//         <video poster="/navigate.png" controls className={styles.img}>
-//           <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-//           <p>This is fallback content</p>
-//         </video>
         
         <p className={styles.description}>
-          The above video is an illustration of the architecture of the navigation model. At each time step, the action feature, RGB feature and the local semantic scene graph feature 
+          Video 2 is an illustration of the architecture of the navigation model. At each time step, the action feature, RGB feature and the local semantic scene graph feature 
           are firstly extracted and concatenated. The concatenated feature are then fed into a double-layer LSTM which outputs the hidden state feature. 
           The hidden state feature is then fed into an MLP network to generate an action for the next step. This process iterates until a ”STOP" 
           action is generated, which indicates that the environment is fully explored and a comprehensive global semantic scene graph is generated.
@@ -125,16 +114,9 @@ export default function Home() {
         <h3 className={styles.description}>
           Demonstrating Track
         </h3>
-        <p className={styles.caption}>
-          Vid.3 The introduction video of the generation of demonstrating tracks.
-        </p>
-//         <video poster="/track_v4.png" controls className={styles.img}>
-//           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-//           <p>This is fallback content</p>
-//         </video>
         
         <p className={styles.description}>
-          The above video is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
+          Video 3 is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
           random greedy search to get key points and beam search to fulfill the mid points between the key point pairs.
         </p>
         
