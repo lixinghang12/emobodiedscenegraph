@@ -55,7 +55,7 @@ export default function Home() {
           global point cloud and global semantic scene graph at time instant t. With the current observed RGB frame, current local semantic scene graph and action
           type at time instant t, a new action is generated for the agent to further explore the environment. This process iterates until a stop action is obtained.
           Our framework consists of three essential parts: Global Semantic Scene Graph Constructor, Local Scene Graph Prediction Network and Navigation Model.
-          <br>
+          <br></br>
           &nbsp;&nbsp;&nbsp;&nbsp;At each step, LSGPN predicts a local semantic scene graph from the current observation of the agent, Global Semantic Scene Graph Constructor updates the global
           scene graph which contains all the detected objects and the semantic relations between them, and update the nodes and edges in the global semantic scene graph.
         </p>
