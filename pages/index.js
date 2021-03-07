@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Embodied Semantic Scene Graph Generation</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -14,9 +14,9 @@ export default function Home() {
           Embodied Semantic Scene Graph Generation
         </h1>
         
-        <h2 className={styles.description}>
+        <h3 className={styles.description}>
           Abstract
-        </h2>
+        </h3>
         <p className={styles.description}>
           &nbsp;&nbsp;&nbsp;&nbsp;Semantic scene graph provides an effective way for
           intelligent agents to better understand the environment and it
@@ -39,10 +39,27 @@ export default function Home() {
           experimental results are achieved.
           
         </p>
+    
+        <p className={styles.caption}>
+          Vid.1 The introduction video of the generation of demonstrating tracks.
+        </p>
         
-        <h2 className={styles.description}>
+        <video poster="/demonstrate.png" controls className={styles.img}>
+          <source src="demonstrate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+          <p>This is fallback content</p>
+        </video>
+    
+    
+        <p className={styles.description}>
+          
+          The above video is an illustration for the Embodied Semantic Scene Graph Generation.
+          The agent starts to move and always selects an appropriate action to obtain better semantic scene graph. Further, the obtained semantic scene graph can
+          be helpful to generate the streaming video captioning.
+          
+        </p>
+        <h3 className={styles.description}>
           Framework
-        </h2>
+        </h3>
         <p className={styles.caption}>
           Fig.1 The proposed framework of embodied semantic scene graph generation.
         </p>
@@ -60,6 +77,11 @@ export default function Home() {
           scene graph which contains all the detected objects and the semantic relations between them, and update the nodes and edges in the global semantic scene graph.
         </p>
         
+        
+        <h3 className={styles.description}>
+          Local Scene Graph Prediction Network
+        </h3>
+        
         <p className={styles.caption}>
           Fig.2 The architecture of Local Scene Graph Prediction Network.
         </p>
@@ -76,15 +98,25 @@ export default function Home() {
           triple for information propagation, and the features of neighbors are averaged as the new feature for each node.
         </p>
         <p className={styles.caption}>
-          Vid.1 The introduction video of the generation of demonstrating tracks.
+          Vid.2 The introduction video of the generation of demonstrating tracks.
         </p>
         
+        <h3 className={styles.description}>
+          Demonstrating Track
+        </h3>
         <video poster="/track_v4.png" controls className={styles.img}>
           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
           <p>This is fallback content</p>
         </video>
         
+        <p className={styles.description}>
+          The above video is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
+          random greedy search to get key points and beam search to fulfill the mid points between the key point pairs.
+        </p>
         
+        <h3 className={styles.description}>
+          Representative Result
+        </h3>
         
       </main>
     
