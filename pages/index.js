@@ -18,11 +18,11 @@ export default function Home() {
           Anounymous Submision for RSS2021 (#140)
         </h3>
         
-        <div>
-          <h3 align="left"><font color="black">The illustration for the Embodied Semantic Scene Graph Generation </h3>
-          <h3 align="center"><font color="black"> The architecture of the navigation model. </h3>
-          <h3 align="right"><font color="black"> The illustration of the demonstration path generation. </h3>
-        </div> 
+//         <div>
+//           <h3 align="left"><font color="black">The illustration for the Embodied Semantic Scene Graph Generation </h3>
+//           <h3 align="center"><font color="black"> The architecture of the navigation model. </h3>
+//           <h3 align="right"><font color="black"> The illustration of the demonstration path generation. </h3>
+//         </div> 
         <div class="box">
             <div class="left">
                 <video poster="/demonstrate.png" controls className={styles.video}>
