@@ -123,6 +123,9 @@ export default function Home() {
         <h3 className={styles.description}>
           Representative Result
         </h3>
+        <video poster="/FloorPlan228.png" controls className={styles.video}>
+          <source src="/FloorPlan228.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+        </video>  
         
       </main>
     
