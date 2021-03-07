@@ -53,7 +53,7 @@ export default function Home() {
     
         <p className={styles.description}>
           
-          The above video is an illustration for the Embodied Semantic Scene Graph Generation.
+          Video 1 is an illustration for the Embodied Semantic Scene Graph Generation.
           The agent starts to move and always selects an appropriate action to obtain better semantic scene graph. Further, the obtained semantic scene graph can
           be helpful to generate the streaming video captioning.
           
