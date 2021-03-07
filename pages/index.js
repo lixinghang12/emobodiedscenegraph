@@ -17,17 +17,12 @@ export default function Home() {
         <h3 className={styles.description}>
           Anounymous Submision for RSS2021 (#140)
         </h3>
-        
-//         <div>
-//           <h3 align="left"><font color="black">The illustration for the Embodied Semantic Scene Graph Generation </h3>
-//           <h3 align="center"><font color="black"> The architecture of the navigation model. </h3>
-//           <h3 align="right"><font color="black"> The illustration of the demonstration path generation. </h3>
-//         </div> 
+          
         <div class="box">
             <div class="left">
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-                  
+                  video caption
                 </video>              
             </div>
             <div class="center">
@@ -47,11 +42,7 @@ export default function Home() {
         <p className={styles.caption}>
           Vid.1 The introduction video of the generation of demonstrating tracks.
         </p>
-        
-//         <video poster="/demonstrate.png" controls className={styles.img}>
-//           <source src="demon.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-//           <p>This is fallback content</p>
-//         </video>
+       
     
     
         <p className={styles.description}>
