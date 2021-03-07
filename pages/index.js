@@ -22,7 +22,7 @@ export default function Home() {
         <div className={styles.box}>
             <div className={styles.small_video}>
                 <div className={styles.video_caption}>
-                  test
+                  Vid.1 The illustration for the Embodied Semantic Scene Graph Generation.
                 </div>
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
@@ -30,7 +30,7 @@ export default function Home() {
             </div>
             <div className={styles.small_video}>
                 <div className={styles.video_caption}>
-                  test
+                   Vid.2 The architecture of the navigation model.
                 </div>
 
                 <video poster="/navigate.png" controls className={styles.video}>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div className={styles.small_video}>
                 <div className={styles.video_caption}>
-                  test
+                  Vid.3 The illustration of the demonstration path generation.
                 </div>
                 <video poster="/track_v4.png" controls className={styles.video}>
                   <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
