@@ -19,19 +19,19 @@ export default function Home() {
         </h3>
           
         <div className={styles.box}>
-            <div className={styles.left}>
+            <div className={styles.small_video}>
                 video caption
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>              
             </div>
-            <div className={styles.center}>
+            <div className={styles.small_video}>
                 <video poster="/navigate.png" controls className={styles.video}>
                   <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                   
                 </video>
             </div>
-            <div className={styles.right}>
+            <div className={styles.small_video}>
                 <video poster="/track_v4.png" controls className={styles.video}>
                   <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                   
