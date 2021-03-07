@@ -20,18 +20,27 @@ export default function Home() {
           
         <div className={styles.box}>
             <div className={styles.small_video}>
-                <span>图片bai1</span>
+                <div className={styles.video_caption}>
+                  test
+                </div>
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>              
             </div>
             <div className={styles.small_video}>
+                <div className={styles.video_caption}>
+                  test
+                </div>
+
                 <video poster="/navigate.png" controls className={styles.video}>
                   <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                   
                 </video>
             </div>
             <div className={styles.small_video}>
+                <div className={styles.video_caption}>
+                  test
+                </div>
                 <video poster="/track_v4.png" controls className={styles.video}>
                   <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                   
