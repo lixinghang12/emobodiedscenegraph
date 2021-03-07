@@ -126,7 +126,32 @@
 .video {
   width: 30%;
 }
+.box{
+    width:1300px;
+    margin:0 auto;
+    position:relative;
+}
+.box .left{
+    width:340px;
+    height:620px;
+    background-color:#000;
+    position:absolute;
 
+}
+.box .center{
+    height:620px;
+    background-color:#000;
+    margin:0 320px 0 320px;
+}
+.box .right{
+    width:340px;
+    height:620px;
+    background-color:#000;
+    position:absolute;
+    right:0;
+    top:0;
+
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
