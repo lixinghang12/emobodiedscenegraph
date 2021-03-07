@@ -14,7 +14,7 @@ export default function Home() {
           Embodied Semantic Scene Graph Generation
         </h1>
         
-        <h2 className={styles.title}>
+        <h2 className={styles.description}>
           Abstract
         </h2>
         <p className={styles.description}>
@@ -40,7 +40,9 @@ export default function Home() {
           
         </p>
         
-        
+        <h2 className={styles.description}>
+          Framework
+        </h2>
         <p className={styles.caption}>
           Fig.1 The proposed framework of embodied semantic scene graph generation.
         </p>
@@ -52,14 +54,36 @@ export default function Home() {
           RGB and depth frames are captured. With the RGB and depth frames, the corresponding semantic point cloud is generated, which is then used to update the
           global point cloud and global semantic scene graph at time instant t. With the current observed RGB frame, current local semantic scene graph and action
           type at time instant t, a new action is generated for the agent to further explore the environment. This process iterates until a stop action is obtained.
-          Our framework 
+          Our framework consists of three essential parts: Global Semantic Scene Graph Constructor, Local Scene Graph Prediction Network (LSGPN) and Navigation Model.
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;At each step, LSGPN predicts a local semantic scene graph from the current observation of the agent, Global Semantic Scene Graph Constructor updates the global
+          scene graph which contains all the detected objects and the semantic relations between them, and update the nodes and edges in the global semantic scene graph.
+          
         </p>
-    
+        
+        <p className={styles.caption}>
+          Fig.2 The architecture of Local Scene Graph Prediction Network.
+        </p>
+        
+        <img src="/GCN.png" className={styles.img} />
+        
+        <p className={styles.description}>
+          As shown in fig.2, the Local Scene Graph Prediction Network consists of embedding module and Graph Convolutionary Network(GCN) module,
+          The generated local semantic scene graph includes the current in-sight objects and their relations with each other.
+          The embedding module utilizes two PointNet models to deal
+          with the object and relationships, respectively, and separately
+          combines them with the category information using the Multiple Layer Perception (MLP) to get the corresponding feature
+          vectors, which can be arranged as a set of triples (subject,
+          predicate, object) to form the dense graph.
+          We further employ the GCN module to process the instances
+          and proposed edges in the triples. The GCN projects each
+          triple for information propagation, and the features of neighbors are averaged as the new feature for each node.
+        </p>
         <p className={styles.caption}>
           Vid.1 The introduction video of the generation of demonstrating tracks.
         </p>
         
-        <video poster="/track_v2.png" controls className={styles.img}>
+        <video poster="/track_v4.png" controls className={styles.img}>
           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
           <p>This is fallback content</p>
         </video>
