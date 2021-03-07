@@ -34,12 +34,15 @@ export default function Home() {
           performance indexes. Additionally, we implement the proposed
           method on a streaming video captioning task and promising
           experimental results are achieved.
-          <code className={styles.code}>pages/index.js</code>
+          
         </p>
+        
+        <img src="/framework.png"/ style="width: 100%">
+    
+        
         
       </main>
     
-      <img src="/framework.png"/>
 
       <footer className={styles.footer}>
        
