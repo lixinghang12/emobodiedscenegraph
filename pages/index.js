@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Semantic scene graph provides an effective way for
+          &nbsp;&nbsp;Semantic scene graph provides an effective way for
           intelligent agents to better understand the environment and it
           has been extensively used in many robotic applications. However,
           existing work mainly focuses on generating the scene graph from
@@ -37,12 +37,19 @@ export default function Home() {
           
         </p>
         
+        <p className={styles.caption}>
+          Fig.1 The proposed framework of embodied semantic scene graph generation.
+        </p>
+        
         <img src="/framework.png" className={styles.img} />
-    
-          <video poster="/framework.png" controls>
-            <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-            <p>This is fallback content</p>
-          </video>
+          
+        <p className={styles.caption}>
+          Vid.1 The introduction video of the generation of demonstrating tracks.
+        </p>
+        <video poster="/framework.png" controls>
+          <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+          <p>This is fallback content</p>
+        </video>
         
       </main>
     
