@@ -22,7 +22,7 @@ export default function Home() {
         <div className={styles.box}>
             <div className={styles.small_video}>
                 <div className={styles.video_caption}>
-                  Vid.1 Example for Embodied Semantic Scene Graph Generation
+                  Vid.1 Embodied Semantic Scene Graph Generation.
                 </div>
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
