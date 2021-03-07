@@ -41,8 +41,8 @@ export default function Home() {
     
         <video>
           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-        <p>This is fallback content</p>
-</video>
+          <p>This is fallback content</p>
+        </video>
         
       </main>
     
