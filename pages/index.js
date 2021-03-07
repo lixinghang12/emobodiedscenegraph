@@ -46,7 +46,7 @@ export default function Home() {
         <p className={styles.caption}>
           Vid.1 The introduction video of the generation of demonstrating tracks.
         </p>
-        <video poster="/framework.png" controls>
+        <video poster="/framework.png" controls className={styles.img}>
           <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
           <p>This is fallback content</p>
         </video>
