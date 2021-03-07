@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          &nbsp;&nbsp;Semantic scene graph provides an effective way for
+          &nbsp;&nbsp;&nbsp;&nbsp;Semantic scene graph provides an effective way for
           intelligent agents to better understand the environment and it
           has been extensively used in many robotic applications. However,
           existing work mainly focuses on generating the scene graph from
