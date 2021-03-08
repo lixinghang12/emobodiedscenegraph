@@ -6,7 +6,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Embodied Semantic Scene Graph Generation</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -25,7 +24,7 @@ export default function Home() {
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>  
                 <div className={styles.video_caption}>
-                  Problem Formulation
+                  Background
                 </div>
             
             </div>
@@ -158,10 +157,7 @@ export default function Home() {
         
         <h3 className={styles.description}>
           Representative Result
-        </h3>
-        <video poster="/FloorPlan228.png" controls className={styles.video}>
-          <source src="/FloorPlan228.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-        </video>  
+        </h3> 
         
       </main>
     
