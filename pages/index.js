@@ -27,9 +27,19 @@ export default function Home() {
                 <div className={styles.video_caption}>
                   Problem Formulation
                 </div>
+            
             </div>
             <div className={styles.small_video}>
 
+                <video poster="/demonstrate.png" controls className={styles.video}>
+                  <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                </video>  
+                <div className={styles.video_caption}>
+                  Problem Formulation
+                </div>
+    
+            </div>
+            <div className={styles.small_video}>
                 <video poster="/navigate.png" controls className={styles.video}>
                   <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>
@@ -37,20 +47,44 @@ export default function Home() {
                 <div className={styles.video_caption}>
                    Architecture
                 </div>
-    
-            </div>
-            <div className={styles.small_video}>
-                <video poster="/track_v4.png" controls className={styles.video}>
-                  <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-                </video>
-    
-                <div className={styles.video_caption}>
-                  Demonstration Path Generation
-                </div>
                 
             </div>
         </div> 
        
+        <br></br>
+    
+        <div className={styles.box}>
+            <div className={styles.small_video}>
+                <video poster="/track_v4.png" controls className={styles.video}>
+                  <source src="/demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                </video>  
+                <div className={styles.video_caption}>
+                  Demonstration Path Generation
+                </div>
+            </div>
+            <div className={styles.small_video}>
+
+                <video poster="/FloorPlan228.png" controls className={styles.video}>
+                  <source src="FloorPlan228_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                </video>
+    
+                <div className={styles.video_caption}>
+                   Result_1
+                </div>
+    
+            </div>
+            <div className={styles.small_video}>
+                <video poster="/FloorPlan228.png" controls className={styles.video}>
+                  <source src="FloorPlan228_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                </video>
+    
+                <div className={styles.video_caption}>
+                  Result_2
+                </div>
+                
+            </div>
+        </div> 
+    
         <br></br>
     
         <p className={styles.description}>
