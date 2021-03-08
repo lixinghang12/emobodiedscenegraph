@@ -21,31 +21,33 @@ export default function Home() {
           
         <div className={styles.box}>
             <div className={styles.small_video}>
-                <div className={styles.video_caption}>
-                  Vid.1 Embodied Semantic Scene Graph Generation.
-                </div>
                 <video poster="/demonstrate.png" controls className={styles.video}>
                   <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-                </video>              
+                </video>  
+                <div className={styles.video_caption}>
+                  Problem Formulation
+                </div>
             </div>
             <div className={styles.small_video}>
-                <div className={styles.video_caption}>
-                   Vid.2 The architecture of the navigation model.
-                </div>
 
                 <video poster="/navigate.png" controls className={styles.video}>
                   <source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-                  
                 </video>
+    
+                <div className={styles.video_caption}>
+                   Architecture
+                </div>
+    
             </div>
             <div className={styles.small_video}>
-                <div className={styles.video_caption}>
-                  Vid.3 The illustration of the demonstration path generation.
-                </div>
                 <video poster="/track_v4.png" controls className={styles.video}>
                   <source src="demonstrate_track.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
-                  
                 </video>
+    
+                <div className={styles.video_caption}>
+                  Demonstration Path Generation
+                </div>
+                
             </div>
         </div> 
        
