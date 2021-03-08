@@ -114,7 +114,11 @@ export default function Home() {
           this work introduces the embodiment of the agent to effectively combine the action, vision and language together for autonomous 3D semantic scene graph generation.
           
         </p>
-    
+        
+        <h3 className={styles.description}>
+          Problem Formulation
+        </h3>
+        
         <p className={styles.description}>
           
           &nbsp;&nbsp;&nbsp;&nbsp;Video "Problem Formulation" is an illustration for the Embodied Semantic Scene Graph Generation problem. The agent extracts semantic information
