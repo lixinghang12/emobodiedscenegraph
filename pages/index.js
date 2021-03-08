@@ -187,8 +187,11 @@ export default function Home() {
         </h3>
         
         <p className={styles.description}>
-          &nbsp;&nbsp;&nbsp;&nbsp;Video 3 is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
-          random greedy search to get key points and beam search to fulfill the mid points between the key point pairs.
+          &nbsp;&nbsp;&nbsp;&nbsp;Video "Demonstration Path Generation" is an example for the generation of the demonstrating tracks. We generate the demonstrating track in two steps: 
+          At the first step, we count the new object number for all neighbors that are k steps from current viewpoint, and randomly choose from the neighbor viewpoints with the maximum
+          number of new objects to be the next key point. If there is no new object at all neighbors at k-distance, we add 1 to k and continue the search.
+          For the second step, we use beam search to fulfill the track between the adjacent key point pairs in the key point list generated at step 1, and finally 
+          get the full demonstrating tracks.
         </p>
         
         <h3 className={styles.description}>
