@@ -20,8 +20,8 @@ export default function Home() {
           
         <div className={styles.box}>
             <div className={styles.small_video}>
-                <video poster="/demonstrate.png" controls className={styles.video}>
-                  <source src="/demonstrate_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                <video poster="/back.png" controls className={styles.video}>
+                  <source src="/background.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>  
                 <div className={styles.video_caption}>
                   Background
