@@ -89,7 +89,6 @@ export default function Home() {
         <h3 className={styles.description}>
           Background
         </h3>
-        <p className={styles.description}>
         
         <p className={styles.description}>
           &nbsp;&nbsp;&nbsp;&nbsp;Scene graphs used to be widely used in computer graphics to arrange spatial representations of a graphical scene. It is a
