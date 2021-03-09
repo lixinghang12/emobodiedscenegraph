@@ -74,7 +74,7 @@ export default function Home() {
             </div>
             <div className={styles.small_video}>
                 <video poster="/FloorPlan329.png" controls className={styles.video}>
-                  <source src="FloorPlan329.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+                  <source src="FloorPlan329_v2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>
     
                 <div className={styles.video_caption}>
