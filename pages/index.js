@@ -15,7 +15,7 @@ export default function Home() {
         
         
         <h3 className={styles.description}>
-          Anounymous Submision for RSS2021 (#140)
+          Anounymous Submision for CORL2021 (#136)
         </h3>
           
         <div className={styles.box}>
