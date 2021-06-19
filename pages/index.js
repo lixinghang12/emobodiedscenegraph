@@ -105,7 +105,7 @@ export default function Home() {
           it is necessary for the agent to have the ability to autonomously explore the environment to generate a good semantic scene graph.
           <br></br>
           &nbsp;&nbsp;&nbsp;&nbsp;In this work, we adopt the embodied exploration framework
-          to tackle this problem, which combines the action and perception abilities of the agent. The embodied agent can generate actions to autonomously explore the environment and thus
+          to tackle this problem, which combines the action and perception abilities of the agent. The embodied agent can generate actions to autonomously explore the environment and thus
           incrementally construct a high-quality semantic scene graph using the detected object instances and contextual information. The collected sensor data is continuously processed and
           incorporated into the semantic scene graph model along with the exploration process. Therefore, we call the proposed task
           as Embodied Semantic Scene Graph Generation, which has never been addressed before. The illustration is demonstrated in video "Background".
@@ -141,7 +141,7 @@ export default function Home() {
     
           &nbsp;&nbsp;&nbsp;&nbsp;As shown in fig.1, At time instant t, after taking one action, the agent comes to a new viewpoint and the
           RGB and depth frames are captured. With the RGB and depth frames, the corresponding semantic point cloud is generated, which is then used to update the
-          global point cloud and global semantic scene graph at time instant t. With the current observed RGB frame, current local semantic scene graph and action
+          global point cloud and global semantic scene graph at time instant t. With the current observed RGB frame, current local semantic scene graph, global semantic scene graph and action
           type at time instant t, a new action is generated for the agent to further explore the environment. This process iterates until a stop action is obtained.
           Our framework consists of three essential parts: Global Semantic Scene Graph Constructor, Local Scene Graph Prediction Network and Navigation Model.
           <br></br>
@@ -169,6 +169,10 @@ export default function Home() {
           vectors, which can be arranged as a set of triples (subject, predicate, object) to form the dense graph.
           We further employ the GCN module to process the instances and proposed edges in the triples. The GCN projects each
           triple for information propagation, and the features of neighbors are averaged as the new feature for each node.
+          
+          We use an attention module to calculate the weighted sum for each node and edge embedding vecotr output from the last graph convolutional layer and concatenate them
+          as the vector of local semantic scene graph. For the global semantic scene graph, we mantain a moving average for each node and edge vector, calculate the average
+          for nodes and edges respectively and concatenate them as the vector of global semantic scene graph.
         </p>
         
         <h3 className={styles.description}>
