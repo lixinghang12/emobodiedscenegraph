@@ -40,7 +40,6 @@ export default function Home() {
             </div>
             <div className={styles.small_video}>
                 <video poster="/navigate_v9.png" controls className={styles.video}>
-                  //<source src="navigate.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                   <source src="navigate_v9.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
                 </video>
     
@@ -132,7 +131,6 @@ export default function Home() {
           Framework
         </h3>
         
-//         <img src="/framework.png" className={styles.img} />
         <img src="/framework_v8.png" className={styles.img} />
     
         <p className={styles.caption}>
